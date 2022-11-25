@@ -1,0 +1,181 @@
+body {
+min-height: 320vh;
+background-color: #26a952;
+font-family: Verdana, sans-serif;
+}
+header{
+   z-index: 10;
+   background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 80%;
+	padding: 10px 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000000;
+}
+header ul li a:hover{
+	animation: cos 0.5s ease-in-out forwards;
+}
+img{
+  width: 300px;
+  height: 100px;
+}
+section{
+ position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+section p{
+  color:white;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;  
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.cont{
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  color:white;
+}
+h1{
+  color:white;
+}
+.quest{
+   position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+   font-size: 40px;
+}
+input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    .StartTest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: #fff;
+        color: #28a853;
+        border-radius: 25px;
+        height: 50px;
+    }
+.SectionMainWeb{
+  color:white;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+@keyframes cos {
+  from{color: #000000;}
+  to{background-color: #26a952;
+	color: white;
+	border-radius: 25px;}
+}
+#Err{
+  color: red;
+  visibility: hidden;
+}
+.butt1{
+    position: absolute;
+  left: 36px;
+    background-color: #ffffff;
+  border: none;
+  color: #26a952;
+  padding: 15px 32px;
+  border-radius: 25px;
+align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
